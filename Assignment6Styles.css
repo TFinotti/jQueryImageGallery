@@ -1,0 +1,136 @@
+/*
+	COMP 125 - Summer 2019
+	Client-Side Web Development
+	Blessing Ajiboye
+
+    Image Gallery - Assignment 6
+	AJAX/jQuery
+	Author: Tiago Franco Finotti #301041366
+	Date: Aug 9th 2019
+
+	Filename: Assignment6Styles.css
+*/
+
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background:#c0c0c0;
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header{
+    text-align: center
+}
+#container {
+    position:relative;
+    background-color: white;
+    width:850px;
+    overflow:hidden;
+    border:1px #000 solid;
+    margin:20px auto;
+    padding:20px;
+    border-radius:3px;
+}
+
+/* gallery styles */
+#gallery {
+    background-color:#8cd9ff;
+    height:630px;
+    overflow:hidden;
+    position:relative;
+    width:800px;
+    left:25px;
+    top:20px;
+    border-radius:10px;
+}
+#gallery ul#sets {
+    display:table;
+    list-style:none outside none;
+    margin:10px auto;
+    overflow:hidden;
+}
+#gallery ul#sets li {
+    float:left;
+    margin-right:10px;
+}
+#gallery ul#sets li a {
+    background-color:#000;
+    color:#fff;
+    cursor:pointer;
+    display:block;
+    font-size:14px;
+    font-weight:normal;
+    height:26px;
+    line-height:26px;
+    padding:10px 20px;
+    text-decoration:none;
+
+    border-radius:5px 5px 5px 5px;  
+    background: linear-gradient(#363636, #010101);
+}
+#gallery ul#sets li a:hover{
+    background-color:#ff6a11; 
+    background: linear-gradient(#ff9317, #ff6a11);
+}
+
+#gallery #photo {
+    display:block;
+    margin:10px auto;
+}
+#gallery ul#thumbs {
+    bottom:-25px;
+    left:250px;
+    list-style:none outside none;
+    margin:0 auto;
+    opacity:0.5;
+    overflow:hidden;
+    position:absolute;
+    width:300px;
+
+    -moz-transition: bottom 0.5s ease-in-out;
+    -ms-transition: bottom 0.5s ease-in-out;
+    -o-transition: bottom 0.5s ease-in-out;
+    -webkit-transition: bottom 0.5s ease-in-out;
+    transition: bottom 0.5s ease-in-out;
+}
+#gallery ul#thumbs:hover {
+    opacity:1;
+    bottom:10px;
+}
+#gallery ul#thumbs li {
+    border:1px solid #888;
+    cursor:pointer;
+    float:left;
+    height:38px;
+    width:58px;
+}
+#gallery ul#thumbs li:hover {
+    border:1px solid #fff;
+}
+#gallery ul#thumbs li img {
+    width:100%;
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+	border: black solid thin;
+    border-radius: 15px;
+	box-shadow: 5px 5px 5px gray;
+	padding: 5px;
+	font-weight: bolder;
+	font-size: small;
+}
+
+footer a{
+    text-decoration: none;
+    color: black
+}
+
+footer a:hover{
+    background-color: yellow;
+}
